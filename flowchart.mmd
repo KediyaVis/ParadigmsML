@@ -1,10 +1,20 @@
 flowchart TD
-    A[Define Problem] --> B{Is Data Labeled?}
-    B -->|Yes| C[Supervised Learning]
-    B -->|No| D{Is Goal Pattern Discovery?}
-    D -->|Yes| E[Unsupervised Learning]
-    D -->|No| F{Are Labels Costly?}
-    F -->|Yes| G[Semi/Self-supervised]
-    F -->|No| H{Can Data be Centralized?}
-    H -->|No| I[Federated Learning]
-    H -->|Yes| J[Transfer Learning]
+    A[Start: Define ML Problem] --> B{Is the data labeled?}
+    B -->|Yes| C[Supervised Learning<br/>Use case: Fraud Detection, Email Classification]
+    B -->|No| D{Is the goal to discover hidden structure?}
+    D -->|Yes| E[Unsupervised Learning<br/>Use case: Customer Segmentation, Topic Modeling]
+    D -->|No| F{Are labeled data costly or scarce?}
+    F -->|Yes| G[Semi/Self-Supervised Learning<br/>Use case: NLP Pretraining, Image Embedding]
+    F -->|No| H{Is there access to related pre-trained models?}
+    H -->|Yes| I[Transfer Learning<br/>Use case: Medical Imaging, Domain Adaptation]
+    H -->|No| J{Can data be centralized for training?}
+    J -->|No| K[Federated Learning<br/>Use case: Mobile Keyboard Prediction, Healthcare Data]
+    J -->|Yes| L[Reassess feasibility or engineer labeling pipeline]
+
+    style A fill:#e6f2ff,stroke:#3399ff,stroke-width:2px
+    style C fill:#d0f0c0,stroke:#228B22,stroke-width:1.5px
+    style E fill:#f4cccc,stroke:#d40000,stroke-width:1.5px
+    style G fill:#fce5cd,stroke:#f39c12,stroke-width:1.5px
+    style I fill:#ffe599,stroke:#ff9900,stroke-width:1.5px
+    style K fill:#c9daf8,stroke:#6fa8dc,stroke-width:1.5px
+    style L fill:#fff2cc,stroke:#b45f06,stroke-width:1.5px
