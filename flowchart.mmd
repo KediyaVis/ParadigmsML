@@ -1,0 +1,10 @@
+flowchart TD
+    A[Define Problem] --> B{Is Data Labeled?}
+    B -->|Yes| C[Supervised Learning]
+    B -->|No| D{Is Goal Pattern Discovery?}
+    D -->|Yes| E[Unsupervised Learning]
+    D -->|No| F{Are Labels Costly?}
+    F -->|Yes| G[Semi/Self-supervised]
+    F -->|No| H{Can Data be Centralized?}
+    H -->|No| I[Federated Learning]
+    H -->|Yes| J[Transfer Learning]
