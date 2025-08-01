@@ -1,0 +1,36 @@
+flowchart TB
+    A[Advanced ML Strategies] --> B[Transfer Learning]
+    A --> C[Federated Learning]
+    A --> D[Few-Shot Learning]
+
+    B --> B1[Uses pre-trained models]
+    B --> B2[Fine-tunes on domain-specific data]
+    B --> B3[Best when data is limited but task resembles known one]
+    B --> B4[Use cases:<br/>- Medical Imaging<br/>- Custom Text Classification]
+
+    C --> C1[Trains on decentralized data sources]
+    C --> C2[Only model updates shared, not raw data]
+    C --> C3[Optimized for privacy and edge compute]
+    C --> C4[Use cases:<br/>- Mobile Keyboard Prediction<br/>- Collaborative Healthcare Models]
+
+    D --> D1[Requires few examples per class]
+    D --> D2[Leverages strong prior representations]
+    D --> D3[Useful in low-data regimes with diverse class targets]
+    D --> D4[Use cases:<br/>- Personalization<br/>- Rare Object Detection]
+
+    style A fill:#dbeeff,stroke:#007acc,stroke-width:2px
+    style B fill:#d0f0c0,stroke:#228b22,stroke-width:1.5px
+    style C fill:#f9dcdc,stroke:#cc0000,stroke-width:1.5px
+    style D fill:#fff2cc,stroke:#e6b800,stroke-width:1.5px
+    style B1 fill:#ffffff,stroke:#999999
+    style B2 fill:#ffffff,stroke:#999999
+    style B3 fill:#ffffff,stroke:#999999
+    style B4 fill:#ffffff,stroke:#999999
+    style C1 fill:#ffffff,stroke:#999999
+    style C2 fill:#ffffff,stroke:#999999
+    style C3 fill:#ffffff,stroke:#999999
+    style C4 fill:#ffffff,stroke:#999999
+    style D1 fill:#ffffff,stroke:#999999
+    style D2 fill:#ffffff,stroke:#999999
+    style D3 fill:#ffffff,stroke:#999999
+    style D4 fill:#ffffff,stroke:#999999
