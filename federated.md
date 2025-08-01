@@ -1,4 +1,4 @@
-# Module 3.1: Federated Learning – Strategy, Applications, and Real-World Deployment
+# Federated Learning – Strategy, Applications, and Real-World Deployment
 
 ## Learning Objectives
 - Understand the concept, workflow, and strategic role of Federated Learning (FL)
@@ -28,7 +28,60 @@ Federated Learning is a decentralized machine learning approach that enables mod
 | Security            | Avoids raw data leakage  
 
 ---
+## Real-World Project Examples Using Federated Learning
 
+### 1. Healthcare – Collaborative Tumor Detection
+
+**Project Example**: [Owkin’s Federated Cancer Detection Model](https://research.aimultiple.com/federated-learning/)
+
+**Scenario**: Multiple hospitals train models on their own patient imaging data (e.g., MRI scans) without sharing raw records.
+
+**How It Works**:
+- Each hospital trains a local model on its data.
+- Only encrypted model updates are sent to a central server.
+- The global model improves collaboratively while complying with HIPAA/GDPR.
+
+**Why It Matters**:
+- Enables small institutions to contribute to robust models.
+- Avoids centralizing sensitive medical data.
+- Improves diagnostic accuracy across diverse populations.
+
+---
+
+### 2. Mobile Systems – On-Device Personalization
+
+**Project Example**: Google’s Gboard Keyboard
+
+**Scenario**: Smartphones learn user typing behavior locally to improve autocorrect and suggestions.
+
+**How It Works**:
+- Lightweight models train on-device using keystroke data.
+- Updates are sent to Google servers and aggregated.
+- No raw text is uploaded.
+
+**Why It Matters**:
+- Preserves user privacy.
+- Enables personalization at scale.
+- Reduces latency and bandwidth usage.
+
+---
+
+### 3. Industrial IoT – Predictive Maintenance
+
+**Project Example**: Siemens’ Federated Sensor Analytics
+
+**Scenario**: Factories train models on local sensor data (e.g., vibration, temperature) to predict equipment failures.
+
+**How It Works**:
+- Each site trains a model on its own machinery data.
+- Updates are aggregated to build a global predictive model.
+- No proprietary sensor logs are shared.
+
+**Why It Matters**:
+- Protects intellectual property.
+- Reduces downtime across facilities.
+- Scales predictive analytics without centralizing data.
+---
 ## Workflow Overview
 
 ```mermaid
