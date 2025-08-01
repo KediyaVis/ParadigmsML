@@ -82,6 +82,12 @@ Federated Learning is a decentralized machine learning approach that enables mod
 - Reduces downtime across facilities.
 - Scales predictive analytics without centralizing data.
 ---
+
+## Tutorial 
+[tensorflow federated learning](https://www.tensorflow.org/federated/tutorials/building_your_own_federated_learning_algorithm)
+
+---
+
 ## Workflow Overview
 
 ```mermaid
@@ -100,3 +106,7 @@ sequenceDiagram
     ClientC-->>CentralServer: Send trained updates
 
     CentralServer->>All Clients: Broadcast updated global model
+
+
+
+
