@@ -34,11 +34,10 @@ Test your understanding of how Google’s Gboard utilizes Federated Learning for
 
 ### 4. Which of the following is NOT a feature of Federated Learning in Gboard?
 - [ ] Centralized data collection  
-- [ ] Ephemeral learning  
+- [ ] Real-time learning  
 - [ ] Differential privacy  
 - [ ] Secure aggregation  
 
 
 ---
 
-🧠 Ready for round two? I can tweak the difficulty or add more analytics-focused questions if you'd like.
