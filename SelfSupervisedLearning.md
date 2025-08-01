@@ -80,3 +80,25 @@ flowchart TD
     style C fill:#ede7f6,stroke:#5e35b1
     style D fill:#f3e5f5,stroke:#8e24aa
     style E fill:#e8f5e9,stroke:#388e3c
+```
+
+## Workflow for Wildlife Detection
+
+```mermaid
+flowchart TD
+    A[Raw Drone Footage (Unlabeled)] --> B[Create Pretext Task<br/>e.g., Predict Image Patch from Surrounding Pixels]
+    B --> C[Generate Pseudo-Labels]
+    C --> D[Train CNN on Pretext Task<br/>(e.g., masked patch prediction)]
+    D --> E[Learn Image Representations]
+    E --> F[Transfer Learned Features to Downstream Task<br/>(Wildlife Classification)]
+    F --> G[Deploy on Edge Devices for Real-Time Detection]
+    
+    style A fill:#e3f2fd,stroke:#2196f3
+    style B fill:#fff3e0,stroke:#ff9800
+    style C fill:#ede7f6,stroke:#673ab7
+    style D fill:#f3e5f5,stroke:#9c27b0
+    style E fill:#e8f5e9,stroke:#4caf50
+    style F fill:#fce4ec,stroke:#e91e63
+    style G fill:#ede7f6,stroke:#3f51b5
+```
+
