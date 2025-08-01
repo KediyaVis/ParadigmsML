@@ -87,7 +87,7 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    A[Raw Drone Footage (Unlabeled)] --> B[Define Pretext Task: Patch Prediction]
+    A[Raw Drone Footage Unlabeled] --> B[Define Pretext Task: Patch Prediction]
     B --> C[Generate Pseudo-Labels]
     C --> D[Train CNN on Pretext Task]
     D --> E[Learn General Image Representations]
