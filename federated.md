@@ -18,6 +18,17 @@ Federated Learning is a decentralized machine learning approach that enables mod
 
 ---
 
+| **Aspect**          | **Benefits**                                        | **Trade-offs & Constraints**                              |
+|---------------------|-----------------------------------------------------|------------------------------------------------------------|
+| Privacy             | Retains local data, aligned with legal norms        | Limits access to full data context                         |
+| Personalization     | Models adapt to user-level data distributions       | Risk of overfitting to local biases                        |
+| Bandwidth Savings   | Sends light-weight updates                          | Frequent communication may still strain networks           |
+| Decentralization    | Suits edge compute and remote silos                 | Requires robust client orchestration                       |
+| Scalability         | Enables learning across thousands of nodes          | Aggregate convergence can be challenging                   |
+| Security            | Avoids raw data leakage  
+
+---
+
 ## Workflow Overview
 
 ```mermaid
