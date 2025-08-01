@@ -1,0 +1,27 @@
+
+flowchart TD
+    A[Real-World ML Challenge] --> B[Assess Constraint Type]
+
+    B --> B1{Limited Labeled Data?}
+    B1 -->|Yes| C[Transfer Learning<br/>→ Leverage pre-trained model<br/>→ Fine-tune on target domain<br/>Example: MRI scan classification]
+    B1 -->|No| D{Decentralized Sensitive Data?}
+
+    D -->|Yes| E[Federated Learning<br/>→ Train across distributed sources<br/>→ Preserve privacy, minimize data transfer<br/>Example: Mobile personalization, patient record modeling]
+    D -->|No| F{Few Samples Available Per Class?}
+
+    F -->|Yes| G[Few-Shot Learning<br/>→ Learn from minimal examples<br/>→ Generalize rapidly<br/>Example: Visual defect detection, dynamic tagging]
+    F -->|No| H[Reassess feasibility<br/>→ Explore hybrid or synthetic data approaches]
+
+    %% Styling
+    style A fill:#e0ecff,stroke:#0050b3,stroke-width:2px
+    style B fill:#f7f7f7,stroke:#666666
+    style B1 fill:#f7f7f7,stroke:#666666
+    style C fill:#d0f0c0,stroke:#2e8b57,stroke-width:1.5px
+    style D fill:#f7f7f7,stroke:#666666
+    style E fill:#c9daf8,stroke:#4682b4,stroke-width:1.5px
+    style F fill:#f7f7f7,stroke:#666666
+    style G fill:#fff2cc,stroke:#cc9900,stroke-width:1.5px
+    style H fill:#eeeeee,stroke:#999999,stroke-dasharray: 5 5
+
+    %% Text adjustments
+    linkStyle default stroke-width:1.5px
