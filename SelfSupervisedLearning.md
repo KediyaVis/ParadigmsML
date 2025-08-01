@@ -62,3 +62,21 @@ Self-supervised learning creates **pseudo-labels** from the input data itself. T
 - [BERT: Pre-training of Deep Bidirectional Transformers](https://arxiv.org/abs/1810.04805)
 
 ---
+
+
+## Self-Supervised Learning Workflow
+
+```mermaid
+flowchart TD
+    A[Unlabeled Data] --> B[Create Pretext Task]
+    B --> C[Generate Pseudo-Labels]
+    C --> D[Train Model on Pretext Task]
+    D --> E[Learn Representations]
+    E --> F[Apply to Downstream Task]
+    
+    style A fill:#e0f7fa,stroke:#00796b
+    style F fill:#fce4ec,stroke:#c2185b
+    style B fill:#fff3e0,stroke:#ff8f00
+    style C fill:#ede7f6,stroke:#5e35b1
+    style D fill:#f3e5f5,stroke:#8e24aa
+    style E fill:#e8f5e9,stroke:#388e3c
