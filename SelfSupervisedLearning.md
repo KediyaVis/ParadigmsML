@@ -12,10 +12,10 @@ Self-supervised learning creates **pseudo-labels** from the input data itself. T
 
 ##  Why It Matters
 
-- 🚫 Reduces reliance on labeled datasets  
-- ⚡ Enables pretraining for downstream tasks  
-- 🌍 Unlocks massive unlabeled corpora (e.g., text, images, audio)  
-- 🧩 Learns generalizable features useful across tasks
+- Reduces reliance on labeled datasets  
+- Enables pretraining for downstream tasks  
+- Unlocks massive unlabeled corpora (e.g., text, images, audio)  
+- Learns generalizable features useful across tasks
 
 ---
 
