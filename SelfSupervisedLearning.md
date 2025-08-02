@@ -27,7 +27,7 @@ Self-supervised learning creates **pseudo-labels** from the input data itself. T
 
 ---
 
-## ✨ Example Applications
+## Example Applications
 
 | Domain     | SSL Strategy               | Example Task                      |
 |------------|----------------------------|-----------------------------------|
@@ -38,7 +38,7 @@ Self-supervised learning creates **pseudo-labels** from the input data itself. T
 
 ---
 
-## 🔍 Common Techniques
+## Common Techniques
 
 - **Contrastive Learning**: Compare positive vs. negative pairs to learn invariant features.
 - **Masked Prediction**: Hide parts of data and train models to recover them (e.g., transformers).
