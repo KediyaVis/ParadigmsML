@@ -69,7 +69,7 @@ Which task would most likely benefit from unsupervised learning?
 ### Question 9
 An online retailer trains a recommendation system based on user ratings of products. What type of ML is primarily at work?
 - A. Supervised Learning
-- B. Reinforcement Learning
+- B. Rule Based / Non ML
 - C. Unsupervised Learning
 - D. None of the above
 
@@ -78,8 +78,6 @@ When training a model to distinguish between spam and legitimate emails using a 
 - A. Supervised Learning
 - B. Unsupervised Learning
 - C. Clustering
-- D. Reinforcement Learning
-
+- D. Rule Based / Non ML
 ---
 
-Tip: Try solving these with real-world examples in mind—thinking through business use cases will sharpen your intuition.
